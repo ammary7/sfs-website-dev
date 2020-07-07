@@ -99,6 +99,7 @@ h2.news-card__title {
   font-size: 0.7rem;
   margin-bottom: 0.5rem;
   color: #ccc;
+  /* color: #fff; */
 }
 
 .news-card__details-wrapper {
