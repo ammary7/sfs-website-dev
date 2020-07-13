@@ -1327,7 +1327,8 @@ input[type='reset']:focus {
 }
 
 .kingster-top-search-wrap input.search-field {
-  background: transparent;
+  /* background: transparent; */
+  background: #192f59;
   width: 100%;
   border-width: 0px 0px 3px;
   font-size: 40px;
