@@ -59,7 +59,7 @@ body {
   width: 48rem;
   -moz-perspective: 200rem;
   perspective: 200rem;
-  /* margin: 2rem; */
+  margin-top: 5rem;
 }
 .card__side {
   /* height: 52rem; */
@@ -101,10 +101,11 @@ body {
 }
 .card__theme {
   position: absolute;
-  top: 50%;
+  /* top: 50%; */
+  top: 54%;
   left: 50%;
   transform: translate(-50%, -50%);
-  top: 54%;
+  
   width: 90%;
   text-align: center;
 }
