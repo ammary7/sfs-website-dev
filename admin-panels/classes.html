@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>
-      Quixlab - Bootstrap Admin Dashboard Template by Themefisher.com
+      
     </title>
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png" />
@@ -25,14 +25,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/fontawesome.min.css"
     />
 
-    <link rel="stylesheet" href="https://use.typekit.net/tsl0qfs.css" />
-
     <link href="css/style.css" rel="stylesheet" />
 
-    <link rel="stylesheet" href="css/slide-button.css" />
-    <link rel="stylesheet" href="css/admission-form.css" />
-
-    <link rel="stylesheet" href="css/edit-icon.css" />
+    <link rel="stylesheet" href="css/classes.css" />
   </head>
 
   <body>
@@ -594,139 +589,130 @@
             <div class="col-12">
               <div class="card">
                 <div class="card-body">
-                  <!-- Admission Form -->
+                  <!-- Create Class Button -->
 
-                  <div id="admission-wrapper">
-                    <div id="admission-container">
-                      <div id="admission-info">
-                        <img id="product" src="images/admission/product.png" />
-
-                        <p></p>
-                        <p>
-                          Saint Francis School <br />
-                          City Campus
-                        </p>
-                        <!-- <p>City Campus</p> -->
-                      </div>
-
-                      <div id="admission-input">
-                        <form id="admission-form">
-                          <label>Registration No.</label>
-                          <input
-                            id="registration-no"
-                            type="text"
-                            pattern="[0-9]{13,16}"
-                            name="registration-no"
-                            requierd="true"
-                            placeholder="0123-4567"
-                          />
-
-                          <label>Name</label>
-                          <input
-                            id="admission-holder"
-                            type="text"
-                            name="name"
-                            requierd="true"
-                            maxlength="50"
-                            placeholder="Student Name here"
-                          />
-
-                          <label>Father's Name</label>
-                          <input
-                            id="admission-holder"
-                            type="text"
-                            name="name"
-                            requierd="true"
-                            maxlength="50"
-                            placeholder="Father's Name here"
-                          />
-
-                          <label class="expected-class">Expected Class</label>
-                          <!-- <label id="bg-label">Blood Group</label> -->
-                          <div id="left">
-                            <select
-                              name="month"
-                              id="month"
-                              onchange=""
-                              size="1"
-                            >
-                              <option value="00">Class here</option>
-                              <option value="01">01</option>
-                              <option value="02">02</option>
-                              <option value="03">03</option>
-                              <option value="04">04</option>
-                              <option value="05">05</option>
-                              <option value="06">06</option>
-                              <option value="07">07</option>
-                              <option value="08">08</option>
-                              <option value="09">09</option>
-                              <option value="10">10</option>
-                              <option value="11">11</option>
-                              <option value="12">12</option>
-                            </select>
-                            <!-- <p>/</p> -->
-                            <!-- <select name="year" id="year" onchange="" size="1">
-                    <option value="00">YY</option>
-                    <option value="01">16</option>
-                    <option value="02">17</option>
-                    <option value="03">18</option>
-                    <option value="04">19</option>
-                    <option value="05">20</option>
-                    <option value="06">21</option>
-                    <option value="07">22</option>
-                    <option value="08">23</option>
-                    <option value="09">24</option>
-                    <option value="10">25</option>
-                  </select> -->
+                  <!-- <div class="col-lg-12">
+                    <div class="card">
+                      <div class="card-body">
+                        <h4 class="card-title">Varying modal content</h4>
+                        <div class="bootstrap-modal"> -->
+                          <!-- <button
+                            type="button"
+                            class="btn btn-primary"
+                            data-toggle="modal"
+                            data-target="#exampleModal"
+                            data-whatever="@mdo"
+                          >
+                            Open modal for @mdo
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-primary"
+                            data-toggle="modal"
+                            data-target="#exampleModal"
+                            data-whatever="@fat"
+                          >
+                            Open modal for @fat
+                          </button> -->
+                          <button
+                            type="button"
+                            class="btn btn-primary"
+                            data-toggle="modal"
+                            data-target="#exampleModal"
+                            data-whatever="@getbootstrap"
+                          >
+                            Add a New Class
+                          </button>
+                          <div
+                            class="modal fade"
+                            id="exampleModal"
+                            tabindex="-1"
+                            role="dialog"
+                            aria-labelledby="exampleModalLabel"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5
+                                    class="modal-title"
+                                    id="exampleModalLabel"
+                                  >
+                                    Add a New Class
+                                  </h5>
+                                  <button
+                                    type="button"
+                                    class="close"
+                                    data-dismiss="modal"
+                                    aria-label="Close"
+                                  >
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  <form>
+                                    <div class="form-group">
+                                      <label
+                                        for="recipient-name"
+                                        class="col-form-label"
+                                        >Class Name:</label
+                                      >
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        id="recipient-name"
+                                      />
+                                    </div>
+                                    <!-- <div class="form-group">
+                                      <label
+                                        for="message-text"
+                                        class="col-form-label"
+                                        >Message:</label
+                                      >
+                                      <textarea
+                                        class="form-control"
+                                        id="message-text"
+                                      ></textarea>
+                                    </div> -->
+                                  </form>
+                                </div>
+                                <div class="modal-footer">
+                                  <button
+                                    type="button"
+                                    class="btn btn-secondary"
+                                    data-dismiss="modal"
+                                  >
+                                    Close
+                                  </button>
+                                  <button type="button" class="btn btn-primary">
+                                    Add Class
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
                           </div>
-
-                          <!-- <input
-                  id="bg-input"
-                  type="text"
-                  placeholder="BG here"
-                  maxlength="3"
-                /> -->
-
-                          <!-- Slide Button -->
-                          <div class="slide-btn btn">
-                            <a class="transparent" href="#">
-                              <p>
-                                <span class="bg"></span
-                                ><span class="base"></span
-                                ><span class="text">Add Student</span>
-                              </p></a
-                            >
-                          </div>
-                          <!-- End Slide Button -->
-                        </form>
+                        <!-- </div>
                       </div>
                     </div>
-                  </div>
+                  </div> -->
 
-                  <!-- End Admission Form -->
+                  <!-- End Create Class Button -->
 
-                  <h4 class="card-title">Students Record</h4>
+                  <!-- <h4 class="card-title">Students Record</h4> -->
                   <div class="table-responsive">
                     <table
                       class="table table-striped table-bordered zero-configuration"
                     >
                       <thead>
                         <tr>
-                          <th>Registration No.</th>
-                          <th>Name</th>
-                          <th>Father's Name</th>
-                          <th>Expected Class</th>
-                          <th>Date</th>
+                          <th>Class Name</th>  
                           <th>Options</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td>Tiger Nixon</td>
-                          <td>System Architect</td>
-                          <td>Edinburgh</td>
-                          <td>61</td>
-                          <td>2011/04/25</td>
+                          <td>Seven</td>
+                          
                           <td>
                             <i
                               class="fa fa-edit fa-2x"
@@ -742,11 +728,7 @@
                           </td>
                         </tr>
                         <tr>
-                          <td>Garrett Winters</td>
-                          <td>Accountant</td>
-                          <td>Tokyo</td>
-                          <td>63</td>
-                          <td>2011/07/25</td>
+                          <td>1st year</td>
                           <td>
                             <i
                               class="fa fa-edit fa-2x"
@@ -761,214 +743,12 @@
                             ></i>
                           </td>
                         </tr>
-                        <tr>
-                          <td>Ashton Cox</td>
-                          <td>Junior Technical Author</td>
-                          <td>San Francisco</td>
-                          <td>66</td>
-                          <td>2009/01/12</td>
-                          <td>
-                            <i
-                              class="fa fa-edit fa-2x"
-                              data-toggle="modal"
-                              data-target="#exampleModal"
-                              data-whatever="@getbootstrap"
-                            ></i
-                            ><i
-                              class="fa fa-trash fa-2x"
-                              data-toggle="modal"
-                              data-target="#basicModal"
-                            ></i>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Cedric Kelly</td>
-                          <td>Senior Javascript Developer</td>
-                          <td>Edinburgh</td>
-                          <td>22</td>
-                          <td>2012/03/29</td>
-                          <td>
-                            <i
-                              class="fa fa-edit fa-2x"
-                              data-toggle="modal"
-                              data-target="#exampleModal"
-                              data-whatever="@getbootstrap"
-                            ></i
-                            ><i
-                              class="fa fa-trash fa-2x"
-                              data-toggle="modal"
-                              data-target="#basicModal"
-                            ></i>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Airi Satou</td>
-                          <td>Accountant</td>
-                          <td>Tokyo</td>
-                          <td>33</td>
-                          <td>2008/11/28</td>
-                          <td>
-                            <i
-                              class="fa fa-edit fa-2x"
-                              data-toggle="modal"
-                              data-target="#exampleModal"
-                              data-whatever="@getbootstrap"
-                            ></i
-                            ><i
-                              class="fa fa-trash fa-2x"
-                              data-toggle="modal"
-                              data-target="#basicModal"
-                            ></i>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Brielle Williamson</td>
-                          <td>Integration Specialist</td>
-                          <td>New York</td>
-                          <td>61</td>
-                          <td>2012/12/02</td>
-                          <td>
-                            <i
-                              class="fa fa-edit fa-2x"
-                              data-toggle="modal"
-                              data-target="#exampleModal"
-                              data-whatever="@getbootstrap"
-                            ></i
-                            ><i
-                              class="fa fa-trash fa-2x"
-                              data-toggle="modal"
-                              data-target="#basicModal"
-                            ></i>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Herrod Chandler</td>
-                          <td>Sales Assistant</td>
-                          <td>San Francisco</td>
-                          <td>59</td>
-                          <td>2012/08/06</td>
-                          <td>
-                            <i
-                              class="fa fa-edit fa-2x"
-                              data-toggle="modal"
-                              data-target="#exampleModal"
-                              data-whatever="@getbootstrap"
-                            ></i
-                            ><i
-                              class="fa fa-trash fa-2x"
-                              data-toggle="modal"
-                              data-target="#basicModal"
-                            ></i>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Rhona Davidson</td>
-                          <td>Integration Specialist</td>
-                          <td>Tokyo</td>
-                          <td>55</td>
-                          <td>2010/10/14</td>
-                          <td>
-                            <i
-                              class="fa fa-edit fa-2x"
-                              data-toggle="modal"
-                              data-target="#exampleModal"
-                              data-whatever="@getbootstrap"
-                            ></i
-                            ><i
-                              class="fa fa-trash fa-2x"
-                              data-toggle="modal"
-                              data-target="#basicModal"
-                            ></i>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Colleen Hurst</td>
-                          <td>Javascript Developer</td>
-                          <td>San Francisco</td>
-                          <td>39</td>
-                          <td>2009/09/15</td>
-                          <td>
-                            <i
-                              class="fa fa-edit fa-2x"
-                              data-toggle="modal"
-                              data-target="#exampleModal"
-                              data-whatever="@getbootstrap"
-                            ></i
-                            ><i
-                              class="fa fa-trash fa-2x"
-                              data-toggle="modal"
-                              data-target="#basicModal"
-                            ></i>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Sonya Frost</td>
-                          <td>Software Engineer</td>
-                          <td>Edinburgh</td>
-                          <td>23</td>
-                          <td>2008/12/13</td>
-                          <td>
-                            <i
-                              class="fa fa-edit fa-2x"
-                              data-toggle="modal"
-                              data-target="#exampleModal"
-                              data-whatever="@getbootstrap"
-                            ></i
-                            ><i
-                              class="fa fa-trash fa-2x"
-                              data-toggle="modal"
-                              data-target="#basicModal"
-                            ></i>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Jena Gaines</td>
-                          <td>Office Manager</td>
-                          <td>London</td>
-                          <td>30</td>
-                          <td>2008/12/19</td>
-                          <td>
-                            <i
-                              class="fa fa-edit fa-2x"
-                              data-toggle="modal"
-                              data-target="#exampleModal"
-                              data-whatever="@getbootstrap"
-                            ></i
-                            ><i
-                              class="fa fa-trash fa-2x"
-                              data-toggle="modal"
-                              data-target="#basicModal"
-                            ></i>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Quinn Flynn</td>
-                          <td>Support Lead</td>
-                          <td>Edinburgh</td>
-                          <td>22</td>
-                          <td>2013/03/03</td>
-                          <td>
-                            <i
-                              class="fa fa-edit fa-2x"
-                              data-toggle="modal"
-                              data-target="#exampleModal"
-                              data-whatever="@getbootstrap"
-                            ></i
-                            ><i
-                              class="fa fa-trash fa-2x"
-                              data-toggle="modal"
-                              data-target="#basicModal"
-                            ></i>
-                          </td>
-                        </tr>
+                        
                       </tbody>
                       <tfoot>
                         <tr>
-                          <th>Registration No.</th>
-                          <th>Name</th>
-                          <th>Father's Name</th>
-                          <th>Expected Class</th>
-                          <th>Date</th>
+                          <th>Class Name</th>
+                          
                           <th>Options</th>
                         </tr>
                       </tfoot>
