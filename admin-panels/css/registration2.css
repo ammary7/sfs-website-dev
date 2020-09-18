@@ -291,7 +291,6 @@ body {
 
   transform: translateX(600px);
 
-
   -webkit-transition: 0.2s;
   -moz-transition: 0.2s;
   -o-transition: 0.2s;
@@ -408,4 +407,16 @@ body {
   -ms-transform: translateX(0px);
   -o-transform: translateX(0px);
   transform: translateX(0px);
+}
+
+.table-responsive {
+  /* margin-top: 1000px; */
+  position: absolute;
+  top: 83%;
+  transform: translate(-15%);
+  /* left: 50%; */
+}
+
+.fa-edit {
+  margin-right: 20px;
 }

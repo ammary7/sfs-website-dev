@@ -170,12 +170,14 @@
         b: 65,
     }, {
         y: '2022',
-        a: 100,
-        b: 90,
+        a: 88,
+        b: 12,
     }],
     xkey: 'y',
-    ykeys: ['a', 'b', 'c'],
-    labels: ['A', 'B', 'C'],
+    // ykeys: ['a', 'b', 'c'],
+    // labels: ['A', 'B', 'C'],
+    ykeys: ['a', 'b'],
+    labels: ['Pass', 'Fail'],
     barColors: ['#FC6C8E', '#7571f9'],
     hideHover: 'auto',
     gridLineColor: 'transparent',
@@ -227,12 +229,13 @@
     new Chart(ctx, {
         type: 'line',
         data: {
-            labels: ["2010", "2011", "2012", "2013", "2014", "2015", "2016"],
+            // labels: ["2010", "2011", "2012", "2013", "2014", "2015", "2016"],
+            labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
             type: 'line',
             defaultFontFamily: 'Montserrat',
             datasets: [{
                 data: [0, 15, 57, 12, 85, 10, 50],
-                label: "iPhone X",
+                label: "Test",
                 backgroundColor: '#847DFA',
                 borderColor: '#847DFA',
                 borderWidth: 0.5,
@@ -241,7 +244,7 @@
                 pointBorderColor: 'transparent',
                 pointBackgroundColor: '#847DFA',
             }, {
-                label: "Pixel 2",
+                label: "Homework",
                 data: [0, 30, 5, 53, 15, 55, 0],
                 backgroundColor: '#F196B0',
                 borderColor: '#F196B0',
