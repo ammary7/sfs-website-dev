@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>SFS Login</title>
+    <title>Login V13</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!--===============================================================================================-->
@@ -62,36 +62,7 @@
     <!--===============================================================================================-->
   </head>
   <body style="background-color: #999999">
-
-
-    
-
-    
     <div class="limiter">
-
-
-
-      <?php
-      if(isset($_SESSION['error'])){
-        echo "
-          <div class='callout callout-danger text-center'>
-            <p>".$_SESSION['error']."</p> 
-          </div>
-        ";
-        unset($_SESSION['error']);
-      }
-      if(isset($_SESSION['success'])){
-        echo "
-          <div class='callout callout-success text-center'>
-            <p>".$_SESSION['success']."</p> 
-          </div>
-        ";
-        unset($_SESSION['success']);
-      }
-    ?>
-
-      
-
       <div class="container-login100">
         <div
           class="login100-more"
@@ -100,7 +71,7 @@
 
         <div class="wrap-login100 p-l-50 p-r-50 p-t-72 p-b-50">
           <form class="login100-form validate-form">
-            <span class="login100-form-title p-b-59"> <img src="../../images/logo-2.png" alt=""> </span>
+            <span class="login100-form-title p-b-59"> Welcome to SFS </span>
 
             <div
               class="wrap-input100 validate-input"
