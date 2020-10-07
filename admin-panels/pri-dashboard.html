@@ -10,6 +10,12 @@
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png" />
     <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="./plugins/chartist/css/chartist.min.css" />
+    <link
+      rel="stylesheet"
+      href="./plugins/chartist-plugin-tooltips/css/chartist-plugin-tooltip.css"
+    />
+
     <link href="css/style.css" rel="stylesheet" />
   </head>
 
@@ -569,186 +575,394 @@
 
         <div class="container-fluid">
           <div class="row">
-            <div class="col-lg-12">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">Student Information</h4>
-                  <div class="basic-form">
-                    <form>
-                      <div class="form-row">
-                        <div class="form-group col-md-4">
-                          <label>Admission No.</label>
-                          <input type="text" class="form-control" />
-                        </div>
-                        <div class="form-group col-md-4">
-                          <label>Name</label>
-                          <input type="text" class="form-control" />
-                        </div>
-                        <div class="form-group col-md-4">
-                          <label>نام</label>
-                          <input type="text" class="form-control" />
-                        </div>
-                      </div>
+            <div class="col-3">
+              <div class="card card-widget">
+                <div class="card-body gradient-4">
+                  <div class="media">
+                    <span class="card-widget__icon"
+                      ><i class="icon-tag"></i
+                    ></span>
+                    <div class="media-body">
+                      <h2 class="card-widget__title">120</h2>
+                      <h5 class="card-widget__subtitle">Fee Collection</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-                      <div class="form-row">
-                        <div class="form-group col-md-4">
-                          <label>Expected Class</label>
-                          <input type="text" class="form-control" />
-                        </div>
-                        <div class="form-group col-md-4">
-                          <label>Father's Name</label>
-                          <input type="text" class="form-control" />
-                        </div>
-                        <div class="form-group col-md-4">
-                          <label>والد کا نام</label>
-                          <input type="text" class="form-control" />
-                        </div>
-                      </div>
+            <div class="col-3">
+              <div class="card card-widget">
+                <div class="card-body gradient-3">
+                  <div class="media">
+                    <span class="card-widget__icon"
+                      ><i class="icon-tag"></i
+                    ></span>
+                    <div class="media-body">
+                      <h2 class="card-widget__title">89 %</h2>
+                      <h5 class="card-widget__subtitle">Attendance</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-                      <div class="form-row">
-                        <div class="form-group col-md-4">
-                          <label>Campus</label>
-                          <select id="inputState" class="form-control">
-                            <option selected="selected">Choose...</option>
-                            <option>Al batool</option>
-                            <option>City</option>
-                          </select>
-                        </div>
+            <div class="col-3">
+              <div class="card card-widget">
+                <div class="card-body gradient-4">
+                  <div class="media">
+                    <span class="card-widget__icon"
+                      ><i class="icon-tag"></i
+                    ></span>
+                    <div class="media-body">
+                      <h2 class="card-widget__title">24</h2>
+                      <h5 class="card-widget__subtitle">Teachers</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-                        <div class="form-group col-md-4">
-                          <label>Medium</label>
-                          <select id="inputState" class="form-control">
-                            <option selected="selected">Choose...</option>
-                            <option>Urdu</option>
-                            <option>English</option>
-                          </select>
-                        </div>
-                        <div class="form-group col-md-4">
-                          <label>Blood Group</label>
-                          <select id="inputState" class="form-control">
-                            <option selected="selected">Choose...</option>
-                            <option>Urdu</option>
-                            <option>English</option>
-                          </select>
-                        </div>
-                      </div>
-
-                      <div class="form-row">
-                        <div class="form-group col-md-4">
-                          <label>Date of Birth</label>
-                          <input type="text" class="form-control" />
-                        </div>
-                        <div class="form-group col-md-4">
-                          <label>Place of Birth</label>
-                          <input type="text" class="form-control" />
-                        </div>
-
-                        <div class="form-group col-md-4">
-                          <label>Religion</label>
-                          <select id="inputState" class="form-control">
-                            <option selected="selected">Choose...</option>
-                            <option>Urdu</option>
-                            <option>English</option>
-                          </select>
-                        </div>
-                      </div>
-
-                      <div class="form-row">
-                        <div class="form-group col-md-4">
-                          <label>Father's ID card #</label>
-                          <input type="text" class="form-control" />
-                        </div>
-                        <div class="form-group col-md-4">
-                          <label>Father's occupation</label>
-                          <input type="text" class="form-control" />
-                        </div>
-                        <div class="form-group col-md-4">
-                          <label>Mother's Name</label>
-                          <input type="text" class="form-control" />
-                        </div>
-                      </div>
-
-                      <div class="form-row">
-                        <div class="form-group col-md-4">
-                          <label for="recipient-name" class="col-form-label"
-                            >Photo</label
-                          >
-                          <input type="file" class="form-control-file" />
-                        </div>
-                        <div class="form-group col-md-4">
-                          <label>Contact #Residence</label>
-                          <input type="text" class="form-control" />
-                        </div>
-                        <div class="form-group col-md-4">
-                          <label>Office / Mobile</label>
-                          <input type="text" class="form-control" />
-                        </div>
-                      </div>
-
-                      <div class="form-group">
-                        <label>Current Address</label>
-                        <input type="text" class="form-control" />
-                      </div>
-
-                      <div class="form-group">
-                        <label>Permanent Address</label>
-                        <input type="text" class="form-control" />
-                      </div>
-
-                      <div class="form-row">
-                        <div class="form-group col-md-4">
-                          <label>Guardian name</label>
-                          <input type="text" class="form-control" />
-                        </div>
-                        <div class="form-group col-md-4">
-                          <label>Relationship</label>
-                          <input type="text" class="form-control" />
-                        </div>
-                        <div class="form-group col-md-4">
-                          <label>Occupation</label>
-                          <input type="text" class="form-control" />
-                        </div>
-                      </div>
-
-                      <div class="form-row">
-                        <div class="form-group col-md-4">
-                          <label>ID card no.</label>
-                          <input type="text" class="form-control" />
-                        </div>
-                        <div class="form-group col-md-4">
-                          <label>Contact</label>
-                          <input type="text" class="form-control" />
-                        </div>
-
-                        <div class="form-group col-md-4">
-                          <label>Previous Class</label>
-                          <select id="inputState" class="form-control">
-                            <option selected="selected">Choose...</option>
-                            <option>Urdu</option>
-                            <option>English</option>
-                          </select>
-                        </div>
-                      </div>
-
-                      <div class="form-row">
-                        <div class="form-group col-md-6">
-                          <label>School</label>
-                          <input type="text" class="form-control" />
-                        </div>
-                        <div class="form-group col-md-6">
-                          <label>Reason of leaving previous school</label>
-                          <input type="text" class="form-control" />
-                        </div>
-                      </div>
-
-                      <button type="submit" class="btn btn-dark">Submit</button>
-                    </form>
+            <div class="col-3">
+              <div class="card card-widget">
+                <div class="card-body gradient-9">
+                  <div class="media">
+                    <span class="card-widget__icon"
+                      ><i class="icon-tag"></i
+                    ></span>
+                    <div class="media-body">
+                      <h2 class="card-widget__title">12</h2>
+                      <h5 class="card-widget__subtitle">Staff</h5>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Student Performance</h4>
+                  <div
+                    id="animating-donut"
+                    class="ct-chart ct-golden-section"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">My Attendance</h4>
+                  <div
+                    id="simple-pie"
+                    class="ct-chart ct-golden-section simple-pie-chart-chartist"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cards Row -->
+          <div class="row">
+            <div class="col-12 m-b-30">
+              <h4 class="d-inline">News & Events</h4>
+              <p class="text-muted"></p>
+              <div class="row">
+                <div class="col-md-6 col-lg-3">
+                  <div class="card">
+                    <img class="img-fluid" src="images/big/img1.jpg" alt="" />
+                    <div class="card-body">
+                      <h5 class="card-title">News 1</h5>
+                      <p class="card-text">
+                        Cras sit amet nibh libero, in gravida nulla. Nulla vel
+                        metus scelerisque ante sollicitudin.
+                      </p>
+
+                      <p class="card-text">
+                        <small class="text-muted"
+                          >Last updated 17 mins ago</small
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Col -->
+                <div class="col-md-6 col-lg-3">
+                  <div class="card">
+                    <img class="img-fluid" src="images/big/img2.jpg" alt="" />
+                    <div class="card-body">
+                      <h5 class="card-title">News</h5>
+                      <p class="card-text">
+                        Cras sit amet nibh libero, in gravida nulla. Nulla vel
+                        metus scelerisque ante sollicitudin.
+                      </p>
+                      <p class="card-text">
+                        <small class="text-muted"
+                          >Last updated 17 mins ago</small
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Col -->
+                <div class="col-md-6 col-lg-3">
+                  <div class="card">
+                    <img class="img-fluid" src="images/big/img3.jpg" alt="" />
+                    <div class="card-body">
+                      <h5 class="card-title">News</h5>
+                      <p class="card-text">
+                        Cras sit amet nibh libero, in gravida nulla. Nulla vel
+                        metus scelerisque ante sollicitudin.
+                      </p>
+                      <p class="card-text">
+                        <small class="text-muted"
+                          >Last updated 17 mins ago</small
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Col -->
+                <div class="col-md-6 col-lg-3">
+                  <div class="card">
+                    <img class="img-fluid" src="images/big/img4.jpg" alt="" />
+                    <div class="card-body">
+                      <h5 class="card-title">News</h5>
+                      <p class="card-text">
+                        Cras sit amet nibh libero, in gravida nulla. Nulla vel
+                        metus scelerisque ante sollicitudin.
+                      </p>
+                      <p class="card-text">
+                        <small class="text-muted"
+                          >Last updated 17 mins ago</small
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- End Col -->
+              </div>
+            </div>
+          </div>
+          <!-- End Row -->
+
+          <div class="row">
+            <div class="col-3">
+              <div class="card">
+                <div class="card-body">
+                  <div class="text-center">
+                    <span class="display-5"
+                      ><i class="icon-user gradient-3-text"></i
+                    ></span>
+                    <h2 class="mt-3">Students</h2>
+                    <p>7342</p>
+                    <a
+                      href="javascript:void()"
+                      class="btn gradient-3 btn-lg border-0 btn-rounded px-5"
+                      >Read More</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card">
+                <div class="card-body">
+                  <div class="text-center">
+                    <span class="display-5"
+                      ><i class="icon-user gradient-4-text"></i
+                    ></span>
+                    <h2 class="mt-3">Teachers</h2>
+                    <p>183</p>
+                    <a
+                      href="javascript:void()"
+                      class="btn gradient-4 btn-lg border-0 btn-rounded px-5"
+                      >Read More</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="card">
+                <div class="card-body">
+                  <div class="text-center">
+                    <span class="display-5"
+                      ><i class="icon-user gradient-9-text"></i
+                    ></span>
+                    <h2 class="mt-3">Staff</h2>
+                    <p>105</p>
+                    <a
+                      href="javascript:void()"
+                      class="btn gradient-9 btn-lg border-0 btn-rounded px-5"
+                      >Read More</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="card">
+                <div class="card-body">
+                  <div class="text-center">
+                    <span class="display-5"
+                      ><i class="icon-user gradient-4-text"></i
+                    ></span>
+                    <h2 class="mt-3">Labs</h2>
+                    <p>7</p>
+                    <a
+                      href="javascript:void()"
+                      class="btn gradient-4 btn-lg border-0 btn-rounded px-5"
+                      >Read More</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Tasks Assigned</h4>
+                  <div class="bootstrap-media">
+                    <ul class="list-unstyled">
+                      <li class="media">
+                        <img
+                          class="mr-3"
+                          src="images/avatar/1.jpg"
+                          alt="Generic placeholder image"
+                        />
+                        <div class="media-body">
+                          <h5 class="mt-0 mb-1">Task No. 1</h5>
+                          Cras sit amet nibh libero, in gravida nulla. Nulla vel
+                          metus scelerisque ante sollicitudin. Cras purus odio,
+                          vestibulum in vulputate at, tempus viverra turpis.
+                          Fusce condimentum nunc ac nisi vulputate fringilla.
+                          Donec lacinia congue felis in faucibus. vulputate at,
+                          tempus viverra turpis. Fusce condimentum nunc ac nisi
+                          vulputate fringilla. Donec lacinia congue felis in
+                          faucibus.
+                        </div>
+                      </li>
+                      <li class="media my-4">
+                        <img
+                          class="mr-3"
+                          src="images/avatar/1.jpg"
+                          alt="Generic placeholder image"
+                        />
+                        <div class="media-body">
+                          <h5 class="mt-0 mb-1">Task No. 2</h5>
+                          Cras sit amet nibh libero, in gravida nulla. Nulla vel
+                          metus scelerisque ante sollicitudin. Cras purus odio,
+                          vestibulum in vulputate at, tempus viverra turpis.
+                          Fusce condimentum nunc ac nisi vulputate fringilla.
+                          Donec lacinia congue felis in faucibus. vulputate at,
+                          tempus viverra turpis. Fusce condimentum nunc ac nisi
+                          vulputate fringilla. Donec lacinia congue felis in
+                          faucibus.
+                        </div>
+                      </li>
+                      <li class="media">
+                        <img
+                          class="mr-3"
+                          src="images/avatar/1.jpg"
+                          alt="Generic placeholder image"
+                        />
+                        <div class="media-body">
+                          <h5 class="mt-0 mb-1">Task No. 3</h5>
+                          Cras sit amet nibh libero, in gravida nulla. Nulla vel
+                          metus scelerisque ante sollicitudin. Cras purus odio,
+                          vestibulum in vulputate at, tempus viverra turpis.
+                          Fusce condimentum nunc ac nisi vulputate fringilla.
+                          Donec lacinia congue felis in faucibus. vulputate at,
+                          tempus viverra turpis. Fusce condimentum nunc ac nisi
+                          vulputate fringilla. Donec lacinia congue felis in
+                          faucibus.
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="card">
+                <div class="card-body">
+                  <div class="todo-list">
+                    <div class="tdl-holder">
+                      <div class="tdl-content2 tdl-content--no-label">
+                        <ul>
+                          <li>
+                            <label
+                              ><input type="checkbox" /><i></i
+                              ><span>get up</span
+                              ><a href="#" class="ti-close"></a>
+                            </label>
+                          </li>
+                          <li>
+                            <label
+                              ><input type="checkbox" checked /><i></i
+                              ><span>stand up</span
+                              ><a href="#" class="ti-close"></a>
+                            </label>
+                          </li>
+
+                          <li>
+                            <label
+                              ><input type="checkbox" checked /><i></i
+                              ><span>do something else</span
+                              ><a href="#" class="ti-close"></a>
+                            </label>
+                          </li>
+                          <li>
+                            <label
+                              ><input type="checkbox" /><i></i
+                              ><span>have fun</span
+                              ><a href="#" class="ti-close"></a>
+                            </label>
+                          </li>
+                          <li>
+                            <label
+                              ><input type="checkbox" checked /><i></i
+                              ><span>bed time</span
+                              ><a href="#" class="ti-close"></a>
+                            </label>
+                          </li>
+                          <li>
+                            <label
+                              ><input type="checkbox" checked /><i></i
+                              ><span>Lorem ipsum time</span
+                              ><a href="#" class="ti-close"></a>
+                            </label>
+                          </li>
+                        </ul>
+                      </div>
+                      <input
+                        type="text"
+                        class="tdl-new2 form-control"
+                        placeholder="Write new item and hit 'Enter'..."
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- End Container Fluid -->
         </div>
+
         <!-- #/ container -->
       </div>
       <!--**********************************
@@ -782,5 +996,9 @@
     <script src="js/settings.js"></script>
     <script src="js/gleek.js"></script>
     <script src="js/styleSwitcher.js"></script>
+
+    <script src="./plugins/chartist/js/chartist.min.js"></script>
+    <script src="./plugins/chartist-plugin-tooltips/js/chartist-plugin-tooltip.min.js"></script>
+    <script src="./js/plugins-init/chartist.init.js"></script>
   </body>
 </html>
