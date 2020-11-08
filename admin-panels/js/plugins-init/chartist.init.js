@@ -656,7 +656,8 @@
   //Simple pie chart
   
   var data = {
-    series: [5, 3, 4]
+    // series: [5, 3, 4]
+    series: [65, 35]
   };
   
   var sum = function(a, b) { return a + b };
