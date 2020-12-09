@@ -3485,7 +3485,8 @@ body .gdlr-core-flipbox-item .gdlr-core-flipbox-item-image {
   min-height: 450px;
 }
 #div_1dd7_15 {
-  background-image: url(../images/about-bg-1.jpg);
+  /* background-image: url(../images/about-bg-1.jpg); */
+  background-image: url(../images/DSC_3592_2.jpg);
   background-size: cover;
   background-position: center;
 }

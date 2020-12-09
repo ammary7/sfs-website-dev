@@ -32,7 +32,7 @@ $(document).on('ready',function($) {
 
 		if (!$(this).parent('li').hasClass('active')){
 			var link = $(this).attr('href');
-
+ 
 			$(this).parents('ul').children('li').removeClass('active');
 			$(this).parent().addClass('active');
 

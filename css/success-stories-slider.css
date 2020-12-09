@@ -56,7 +56,9 @@
 .testimonial {
   min-height: 375px;
   position: relative;
-  background: url(https://i.ibb.co/PTJDkgb/testimonials.jpg);
+  /* background: url(https://i.ibb.co/PTJDkgb/testimonials.jpg); */
+  
+  background: url(../images/DSC_2951.jpg);
   padding-top: 50px;
   padding-bottom: 50px;
   background-position: center;
@@ -220,7 +222,12 @@
 .testimonial4_slide h4 {
   color: #ffffff;
   font-size: 22px;
-  background-color: #3db166;
+  /* background-color: #3db166; */
+  /* background-color: rgba(14, 182, 154, 0.5); */
+  /* background-color: rgb(8, 252, 219); */
+  /* background-color: #13EBA2; */
+  /* background-color: #3BFEB8; */
+  background-color: #12E49D;
 }
 
 .testimonial .carousel {
@@ -230,4 +237,20 @@
 .testimonial .carousel-control-prev-icon {
   width: 35px;
   height: 35px;
+}
+
+
+#overlay {
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* Black background with opacity */
+  background-color: rgba(0,0,0,0.5); 
+  /* background-color: rgba(14, 182, 154, 0.5);  */
+  
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  /* cursor: pointer;  */
 }
