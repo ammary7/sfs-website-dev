@@ -12,9 +12,10 @@
   border: 3px solid black;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 576px) {
   .sfs-logo {
-    width: 350px;
+    /* width: 350px; */
+    width: 450px;
   }
 
   #reg-number-3,
@@ -22,9 +23,21 @@
   margin-top: 8px;
   }
 
-  #reg-number-3 {
+  /* #reg-number-3 {
     margin-left: 1px;
-  }
+  } */
+
+
+  #reg-number-1,
+#reg-number-2,
+#reg-number-3,
+#reg-number-4 {
+  width: 66px;
+  
+}
+
+
+
 }
 
 /* .wrap-input100 {

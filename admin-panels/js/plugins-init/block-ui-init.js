@@ -55,7 +55,7 @@
         setTimeout($.unblockUI, 2000); 
     });
     
-    $('#demo_7').click(function() { 
+    $('#demo_7').click(function() {  
         $.blockUI({ 
             centerY: 0, 
             css: { top: '10px', left: '', right: '10px' } 

@@ -1,5 +1,7 @@
 .kingster-page-title-wrap {
-  background-image: url(../upload/page-title.jpg);
+  /* background-image: url(../upload/page-title.jpg); */
+  background-image: url(../images/DSC_2910.JPG);
+  
 }
 .kingster-header-wrap.kingster-header-style-plain {
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);

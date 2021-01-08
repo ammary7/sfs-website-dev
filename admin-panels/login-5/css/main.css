@@ -224,7 +224,7 @@ iframe {
   background: -moz-linear-gradient(bottom, #e8519e, #c77ff2);
   background: linear-gradient(bottom, #e8519e, #c77ff2);
   /* opacity: 0.8; */
-  opacity: 0.65;
+  opacity: 0.5;
 }
 
 /*==================================================================
@@ -530,5 +530,9 @@ iframe {
   .wrap-login100 {
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  img {
+    width: 350px;
   }
 }

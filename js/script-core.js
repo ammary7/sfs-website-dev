@@ -424,7 +424,6 @@ $(document).on('ready',function($) {
 
 
 	(function() {
-
 		var docElem = document.documentElement,
 			didScroll = false,
 			changeHeaderOn = 100;
