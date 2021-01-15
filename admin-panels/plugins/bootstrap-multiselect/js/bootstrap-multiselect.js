@@ -1403,6 +1403,7 @@
                 if (option === 'destroy') {
                     $(this).data('multiselect', false);
                 }
+                
             }
         });
     };

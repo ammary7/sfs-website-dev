@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css?family=Caveat+Brush|Ubuntu:400,700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+button {
+  background-color: #da42f5;
+  border: none;
+  padding: 1rem 2rem;
+  color: white;
+  font-size: 1.2rem;
+  font-family: inherit;
+  border-radius: 0.4rem;
+  margin-right: 1rem;
+}
+button:hover, button:focus {
+  background-color: #aa0bc6;
+}
+button.clear-button {
+  background-color: #67f5dd;
+  color: black;
+}
+button.clear-button:hover, button.clear-button:focus {
+  background-color: #0fe7c2;
+}
+
+.button-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+table {
+  text-align: left;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  vertical-align: top;
+  padding: 0.75rem;
+}
+
+td {
+  font-family: "Caveat Brush", cursive;
+  font-size: 1.2rem;
+  border: 3px solid;
+  /* min-width: 10rem; */
+  min-width: 9.5rem;
+}
+td span {
+  background-color: #ff8af5;
+}
+td[data-cell] {
+  /* height: 10rem; */
+  height: 9.5rem;
+}
+
+.bg-yellow td span {
+  background-color: #fcf3b8;
+}
+
+.bg-green td span {
+  background-color: #adff8a;
+}
+
+thead th {
+  border-right: 3px solid;
+}
+
+tbody th {
+  border-top: 3px solid;
+}
+tbody tr:last-child th {
+  border-bottom: 3px solid;
+}
+
+.wrapper {
+  max-width: 90rem;
+  /* padding: 1rem 2rem; */
+  padding-bottom: 1rem;
+  margin: 0 auto;
+}
+
+.activity {
+  /* width: 8rem; */
+  width: 7.5rem;
+  /* min-height: 8rem; */
+  min-height: 7.5rem;
+
+  display: block;
+  hyphens: auto;
+  padding: 0.5rem;
+  background-color: var(--bg, #fcf3b8);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0.2rem 0.2rem 0.75rem rgba(0, 0, 0, 0.2);
+  font-family: "Caveat Brush", cursive;
+  font-size: 1.2rem;
+  transform: rotate(var(--r, -2deg));
+}
+
+.activities {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex: 1 1 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 8rem);
+  gap: 1rem;
+}
+.activities li {
+  min-height: 8rem;
+  display: block;
+  hyphens: auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Caveat Brush", cursive;
+  font-size: 1.2rem;
+}
+@media (min-width: 85rem) {
+  .activities {
+    max-width: 40rem;
+    margin-left: auto;
+  }
+}
+
+.grid {
+  /* margin-top: 2rem; */
+}
+@media (min-width: 85rem) {
+  .grid {
+    display: grid;
+    grid-template-columns: 40rem 1fr;
+    gap: 2rem;
+    align-items: start;
+  }
+}
+
+.activity{
+  color: black;
+}
+
+th {
+  /* color: black; */
+  color: #464A53;
+}
+
+td {
+  /* color: black; */
+  color: #464A53;
+}

@@ -1,10 +1,5 @@
 /* ----------------------------------
 
-Template Name: Edocom - Education & LMS Template
-Author: validtemplate
-Description:
-Version: 1.0
-
 Main Font    : Poppins
 Main Color   : #ffb606
 
@@ -339,7 +334,8 @@ input {
 }
 
 .default-padding {
-  padding-top: 120px;
+  /* padding-top: 120px; */
+  padding-top: 60px;
   padding-bottom: 120px;
 }
 

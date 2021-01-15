@@ -604,41 +604,61 @@ $(function() {
 
     /**************** PIE CHART *******************/
     var piedata = [{
-            label: "Series 1",
+            label: "Present",
             data: [
                 [1, 50]
             ],
             color: '#e1e8f0'
         },
         {
-            label: "Series 2",
+            label: "Absent",
             data: [
                 [1, 90]
             ],
             color: '#7571F9'
         },
-        {
-            label: "Series 3",
-            data: [
-                [1, 50]
-            ],
-            color: '#ff5e5e'
-        },
-        {
-            label: "Series 4",
-            data: [
-                [1, 70]
-            ],
-            color: '#e62739'
-        },
-        {
-            label: "Series 5",
-            data: [
-                [1, 30]
-            ],
-            color: '#9097c4'
-        }
+        // {
+        //     label: "Series 3",
+        //     data: [
+        //         [1, 50]
+        //     ],
+        //     color: '#ff5e5e'
+        // },
+        // {
+        //     label: "Series 4",
+        //     data: [
+        //         [1, 70]
+        //     ],
+        //     color: '#e62739'
+        // },
+        // {
+        //     label: "Series 5",
+        //     data: [
+        //         [1, 30]
+        //     ],
+        //     color: '#9097c4'
+        // }
     ];
+
+
+    var piedata2 = [{
+        label: "Recovered",
+        data: [
+            [1, 50]
+        ],
+        color: '#e1e8f0'
+    },
+    {
+        label: "Remaining",
+        data: [
+            [1, 90]
+        ],
+        color: '#7571F9'
+    },
+    
+];
+
+
 
     $.plot('#flotPie1', piedata, {
         series: {
@@ -659,7 +679,7 @@ $(function() {
         }
     });
 
-    $.plot('#flotPie2', piedata, {
+    $.plot('#flotPie2', piedata2, {
         series: {
             pie: {
                 show: true,
