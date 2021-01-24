@@ -608,7 +608,7 @@ $(function() {
             data: [
                 [1, 50]
             ],
-            color: '#e1e8f0'
+            color: '#ff5e5e'
         },
         {
             label: "Absent",
@@ -616,7 +616,7 @@ $(function() {
                 [1, 90]
             ],
             color: '#7571F9'
-        },
+        }
         // {
         //     label: "Series 3",
         //     data: [
@@ -646,7 +646,7 @@ $(function() {
         data: [
             [1, 50]
         ],
-        color: '#e1e8f0'
+        color: '#ff5e5e'
     },
     {
         label: "Remaining",
@@ -654,7 +654,7 @@ $(function() {
             [1, 90]
         ],
         color: '#7571F9'
-    },
+    }
     
 ];
 

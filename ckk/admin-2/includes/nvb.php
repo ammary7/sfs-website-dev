@@ -19,7 +19,7 @@
         <li class="dropdown user user-menu">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">
             <img src="'../images/profile.jpg'; ?>" class="user-image" alt="User Image">
-            <span class="hidden-xs">safi ullah</span>
+            <span class="hidden-xs" style="color: black">safi ullah</span>
           </a>
           <ul class="dropdown-menu">
             <!-- User image -->
